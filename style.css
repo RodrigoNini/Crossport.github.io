@@ -1,0 +1,17 @@
+* {
+
+}
+
+.navigation {
+    box-sizing: border-box;
+    width: 100%;
+    display: inline-block;
+    background-color: #A50000;
+    color: black;
+    text-decoration: none;
+}
+
+.navigation:hover {
+    color: white;
+    text-decoration: none;
+}
