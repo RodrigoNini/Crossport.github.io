@@ -1,44 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>SACLM - Home</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/75e7b9c926.js" crossorigin="anonymous"></script> 
+<title>Crossport</title>
 </head>
+<body>
+  <!-- Nav section-->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="#" id="navbar__logo"><img src="/galeria/logo.jpg"></a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span><span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a href="/" class="navbar__links">Home</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#box" class="navbar__links">Box</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#coaches" class="navbar__links">Coaches</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#programas" class="navbar__links">Programas</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#bombeiros" class="navbar__links">Bombeiros</a>
+        </li>
+        <!-- <li class="navbar__btn">
+          <a href="/" class="button">Entrar</a>
+        </li> -->
+      </ul>
+    </div>
+  </nav>
+    <!-- Hero section-->
 
-<body class="container">
-    <div class="navigation">
-
-        <img id="nav_logo" src="/galeria/white_logo_transparent.png">
-
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="/sobre.html">Sobre</a></li>
-            <li><a href="/Programa.html">O Teu Programa</a></li>
-            <li><a href="/crossport.html">Crossport</a></li>
-            <li><a href="contatos.html">Contactos</a></li>
-        </ul>
-
+    <div class="main">
+      <div class="main__container">
+        <div class="main__content">
+          <h1>Nós somos</h1>
+          <h2>Crossport</h2>
+          <p>A tua Box em Albufeira!</p>
+        </div>
+        <div class="main__img--container">
+          <img src="/galeria/hero.JPG" alt="box" id="main__img">
+        </div>
+      </div>
+      
+    <!-- Services Section-->
+    <div class="services">
+      <h1>Fica a saber tudo sobre nós!</h1>
+      <div class="services__container">
+        <div class="services__card">
+          <h2>Os treinadores</h2>
+          <p>Quem somos?</p>
+          <button class="main__btn"><a href="#coaches">Saber mais</a></button>
+        </div>
+        <div class="services__card">
+          <h2>Programa</h2>
+          <p>Aulas ou livre</p>
+          <button class="main__btn"><a href="#programas">Saber mais</a></button>
+        </div>
+      </div>
     </div>
 
-        <img id="galeria" src="/galeria/ruben.jpg">
-    <div class="corpo">
-        <h1>O que somos?</h1>
+<!-- box section-->
 
-        <p>O SACLM Program é um serviço para todos o que queiram um acompanhamento profissional, com planos personalizados para cada pessoa.
-            A modalidade é o crossfit, uma forma mais dinâmica e atlética de ficar em forma.
-        </p>
+    <div id="box" class="box_container">
+        <div class="box_head"><h1>Box</h1></div>
+        <p>A 1 de Junho de 2016, nascia um projeto ambicioso que agora é a tua Box em Albufeira. Onde podes encontrar todo o equipamento para um treino completo e divertido!</p>
+      <div class="container">
+        <div class="image before" style="background-image:url('/galeria/box_antiga.jpg');"></div>
+        <div class="image after" style="background-image:url('/galeria/nova_box.jpg');"></div>
+        <input type="range" class="slider" min="1" max="100" value="50" />
+        <div class="slider-button"></div>
+    </div>  
+  </div>
+  <!-- coaches section-->
 
+    <div class='coaches__container' id="coaches">
+      <div class="coach_head"><h1>Os nossos coaches</h1></div>
+      <div class="cards__container">
+        <div class="coach__card">
+        <div class="coach__ava"><img src="/galeria/ruben1.JPG" alt="Coach Ruben"></div>
+        <div class="coach__bio">
+          <h3>Ruben</h3>
+          <p>Certificação Internacional em Cross Training Advanced Coach(Abril 2018).
+            Seminário de Weightliftg com Dmitry Klokov (Outubro de 2018).
+          </p>
+        </div>
+      </div>
+      <div class="coach__card">
+        <div class="coach__ava"><img src="/galeria/bruno.jpg" alt="Coach Bruno"></div>
+        <div class="coach__bio">
+          <h3>Bruno</h3>
+          <p>Curso de Formação Profissional de Crosstraining (Dezembro 2015)
+            Seminário de Weightliftg com Dmitry Klokov (Outubro de 2018)</p>
+        </div>
+      </div>
+      <div class="coach__card">
+        <div class="coach__ava"><img src="/galeria/ricardo.JPG" alt="Coach Ricardo"></div>
+        <div class="coach__bio">
+          <h3>Ricardo</h3>
+          <p>Licenciatura Desporto vertente Turismo
+            Crossfit L1 2019
+            Cefad Suplementação & Nutrição
+            Estes 3x principais.
+            Crosstrainning no CEFAD.</p>
+        </div>
+      </div>
+      </div>
     </div>
-    
-    <div class="footer">
-            <p>Onde nos podes encontrar:</p>
-            <a href="https://www.instagram.com/saclmprogram/"><img class="socials" src="/galeria/insta_icon.png" alt="Instagram" ></a>
-            <a href="https://www.instagram.com/crossportalbufeira/"><img class="socials" id="crossport" src="/galeria/cross_icon.jpg" alt="Crossport Albufeira"></a>
-            <a href="https://www.instagram.com/rvbensilva/"><img class="socials" src="/galeria/coach_logo.png" alt="Instagram Ruben Silva"></a>
+
+  <!-- programas section-->
+
+  <div class='programa__container' id="programas">
+    <h1>O nosso Programa</h1>
+    <table class="blueTable">
+      <thead>
+      <tr>
+      <th>Horários</th>
+      <th>Segunda</th>
+      <th>Terça</th>
+      <th>Quarta</th>
+      <th>Quinta</th>
+      <th>Sexta</th>
+      <th>Sábado</th>
+      </tr>
+      </thead>
+      <tfoot>
+      <tr>
+      <td colspan="7">
+      <div class="links"><a href="#">&laquo;</a> <a class="active" href="#">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">&raquo;</a></div>
+      </td>
+      </tr>
+      </tfoot>
+      <tbody>
+      <tr>
+      <th>7:45 - 8:45</th><td>cell2_1</td><td>cell3_1</td><td>cell4_1</td><td>cell5_1</td><td>cell6_1</td><td>cell7_1</td></tr>
+      <tr>
+      <th>9:00- 10:00</th><td>cell2_2</td><td>cell3_2</td><td>cell4_2</td><td>cell5_2</td><td>cell6_2</td><td>cell7_2</td></tr>
+      <tr>
+      <th>10:00 - 11:00</th><td>cell2_3</td><td>cell3_3</td><td>cell4_3</td><td>cell5_3</td><td>cell6_3</td><td>cell7_3</td></tr>
+      <tr>
+      <th>18.00 - 19.00</th><td>cell2_4</td><td>cell3_4</td><td>cell4_4</td><td>cell5_4</td><td>cell6_4</td><td>cell7_4</td></tr>
+      <tr>
+      <th>19:00 - 20:00</th><td>cell2_5</td><td>cell3_5</td><td>cell4_5</td><td>cell5_5</td><td>cell6_5</td><td>cell7_5</td></tr>
+      <tr>
+      <th>20:00 - 21:00</th><td>cell2_6</td><td>cell3_6</td><td>cell4_6</td><td>cell5_6</td><td>cell6_6</td><td>cell7_6</td></tr>
+      </tbody>
+      </tr>
+      </table>
+
+      <!-- Aula e Open Box
+            Segunda a Sexta
+            7:45 - 8:45
+            9:00- 10:00
+            18.00 - 19.00
+            19:00 - 20:00
+            20:00 - 21:00
+
+            Sábado
+            10:00 - 11:00 -->
+  </div>
+
+
+    <!-- footer section-->
+    <div class="footer__container">
+      <div class="footer__links">
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <a href="#top">Home</a>
+            <a href="/">Bombeiros</a>
+            <a href="/">Programa</a>
+            <a href="/">Instagram</a>
+            <a href="/">Facebook</a>
+          </div>
+          <div class="social__media">
+            <div class="socia__media--wrap">
+              <div class="footer__logo">
+                <a href="" id="footer__logo"><img src="/galeria/logo.jpg"></a>
+
+                <p class="website__rights">© Crossport Albufeira 2022. Todos os direitos reservados</p>
+                <div class="social__icons">
+                  <a href="https://m.facebook.com/CrosSportAlbufeira/?ref=bookmarks" class="social__icon--link" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                  <a href="https://www.instagram.com/crossportalbufeira/" class="social__icon--link" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="https://play.google.com/store/apps/details?id=com.zalox.regybox" class="social__icon--link" target="_blank">
+                    <i class="fa-sharp fa-solid fa-dumbbell"></i>
+                  </a>
+                  <a href="http://www.bv-albufeira.pt/" class="social__icon--link" target="_blank"><i class="fa-solid fa-house-fire"></i>
+                  </a>
+                  <a href="https://maps.app.goo.gl/uMB7sqNixPK1id3LA" class="social__icon--link" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
+                  
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
-    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/app.js"></script>
 </body>
 </html>
